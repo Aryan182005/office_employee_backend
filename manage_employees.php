@@ -1,6 +1,6 @@
 <?php
 session_start();
-require("../config.php");
+require 'config.php';
 
 // only admins
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {

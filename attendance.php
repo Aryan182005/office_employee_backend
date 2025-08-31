@@ -1,6 +1,6 @@
 <?php
 session_start();
-require("../config.php");
+require 'config.php';
 
 if (!isset($_SESSION['role'])) {
     header("Location: login.php");

@@ -4,7 +4,7 @@ if (!isset($_SESSION['admin'])) {
     header("Location: login.php");
     exit;
 }
-require("../config.php");
+require 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $employee_id = $_POST['employee_id'];

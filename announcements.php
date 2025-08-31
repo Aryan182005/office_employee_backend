@@ -1,6 +1,6 @@
 <?php
 session_start();
-require("../config.php");
+require 'config.php';
 
 // Redirect if not logged in
 if (!isset($_SESSION['user_id'])) {

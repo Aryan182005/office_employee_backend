@@ -4,7 +4,7 @@ if (!isset($_SESSION['employee']) && !isset($_SESSION['admin'])) {
     header("Location: login.php");
     exit;
 }
-require("../config.php");
+require 'config.php';
 
 // Payslips array
 $payslips = [];
